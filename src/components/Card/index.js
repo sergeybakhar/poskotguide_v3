@@ -137,7 +137,7 @@ class Card extends Component {
             <h2 className={styles.card__title}>Обсудить и поделиться впечатлениями</h2>
             <div className={styles['card__fb-comments']}>
               <FacebookProvider appId="1045257252264946" language='ru_RU'  >
-                <Comments href={`http://poskotguide.od.ua/#/${card.id}/${card.url}`} width='50%' numPosts='3' orderBy='social' />
+                <Comments href={`http://poskotguide.od.ua/#/${card.id}/${card.url}`} width='100%' numPosts='3' orderBy='social' />
               </FacebookProvider>
             </div>
           </div>

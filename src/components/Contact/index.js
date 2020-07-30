@@ -11,7 +11,7 @@ const Contact = () => (
         <p className={styles.contact__description}>Любые отзывы, пожелания и рекомендации только приветствуются!</p>
         <div className={styles['contact__fb-comments']}>
             <FacebookProvider appId="1045257252264946" language='ru_RU'  >
-                <Comments href="http://poskotguide.od.ua/#/contact" width='50%' numPosts='3' orderBy='reverse_time' />
+                <Comments href="http://poskotguide.od.ua/#/contact" width='100%' numPosts='3' orderBy='reverse_time' />
             </FacebookProvider>
         </div>
     </div>

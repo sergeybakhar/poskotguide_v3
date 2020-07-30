@@ -1,15 +1,15 @@
 import React from 'react';
-import Card from './components/Card';
-import CardsList from './components/CardsList';
-import Contact from './components/Contact';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import NotFound from './components/NotFound';
-import Intro from './components/Intro';
+import Card from '../Card';
+import CardsList from '../CardsList';
+import Contact from '../Contact';
+import Header from '../Header';
+import Footer from '../Footer';
+import NotFound from '../NotFound';
+import Intro from '../Intro';
 import styles from './App.module.scss';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import TopCards from './components/TopCards';
-import MapPage from './components/Map';
+import TopCards from '../TopCards';
+import MapPage from '../Map';
 
 const App = () => (
   <div className={styles.container}>

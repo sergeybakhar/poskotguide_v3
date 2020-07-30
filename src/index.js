@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import App from './components/App';
+import './styles/index.css';
 import * as serviceWorker from './serviceWorker';
 import rootReducer from './store/reducers/rootReducer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
 import './firebase/fbconfig.js';
 import rrfConfig from './firebase/rrfconfig';
 import firebase from 'firebase/app';
 
 const initialState = {};
-const store = createStore(rootReducer, initialState);
+const store = createStore(rootReducer, initialState, process.env.REACT_APP_REDUX_DEVTOOLS && composeWithDevTools());
 
 const rrfProps = {
     firebase,

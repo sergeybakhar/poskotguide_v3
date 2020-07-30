@@ -1,0 +1,12 @@
+@mixin centerAbsolute($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    -webkit-transform: translate(-$left, -$top);
+    transform: translate(-$left, -$top);
+}
+
+@mixin inner($maxWidth:1000px) {
+    max-width: $maxWidth;
+    margin: 0 auto; 
+}
